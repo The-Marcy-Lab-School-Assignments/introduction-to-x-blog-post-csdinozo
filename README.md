@@ -1,10 +1,10 @@
 # FastAPI — Python
 
-By [Catalina Dinozo] (https://github.com/csdinozo)
+By [Catalina Dinozo](https://github.com/csdinozo)
 
 ## Introduction
 
-FastAPI is a modern, high-performance framework for building Application Program Interfaces with Python based on standard Python type hints. [Sebastián Ramírez] (https://github.com/tiangolo) created this framework through combining various alternative frameworks, plug-ins, and tools in adherence to existing standards. Based on tests by the framework's internal development team, FastAPI increases development speed by about 200 to 300% and reduces about 40% of developer errors. With 86.5 thousand stars on GitHub, FastAPI is among the most popular backend frameworks given its lightweight and modular design and ease of use.
+FastAPI is a modern, high-performance framework for building Application Program Interfaces with Python based on standard Python type hints. [Sebastián Ramírez](https://github.com/tiangolo) created this framework through combining various alternative frameworks, plug-ins, and tools in adherence to existing standards. Based on tests by the framework's internal development team, FastAPI increases development speed by about 200 to 300% and reduces about 40% of developer errors. With 86.5 thousand stars on GitHub, FastAPI is among the most popular backend frameworks given its lightweight and modular design and ease of use.
 
 ## Core Syntax and Features. 
 
