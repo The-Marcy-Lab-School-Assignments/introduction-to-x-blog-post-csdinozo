@@ -15,7 +15,6 @@ FastAPI's growing popularity stems from its asynchronous processing and modular 
 
 ## Installation and Setup
 
-* For frameworks (including React and Express): setup/installation/configurations, core concepts, key methods or approaches. Include code snippets with explanations.
 1) After creating a [virtual environment](https://docs.python.org/3/library/venv.html), install FastAPI in the terminal.
 
 ```py
@@ -103,10 +102,8 @@ fastapi dev main.py
     - Its query parameters `count` and `skip` are defaulted to allow for pagination, such that the URLs 'http://127.0.0.1:8000/posts/?count=20&skip=0' and 'http://127.0.0.1:8000/posts/' will both display 20 posts, bypassing zero initial items.
 
 
-## Compare and Contrast
-
-* For programming languages: What are the key differences between the new language and JavaScript? What are the commonalities?
-* For frameworks (including React and Express): What are the alternatives to this framework? Can you compare this framework to anything we've learned in the Core Curriculum? What are the tradeoffs when choosing this framework compared to the alternatives?
+## Comparison to Express.js
+While Express.js uses the Node.js and JavaScript ecosystem and has access to its libraries and tools, it lacks the type safety of FastAPI and requires external tools such as TypeScript. Although FastAPI is less mature and less flexible, it prioritizes performance and type safety, providing automatic API documentation.
 
 ## Conclusion & Tips for learning this language/framework.
 
