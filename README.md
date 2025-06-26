@@ -10,9 +10,33 @@ FastAPI is a modern, high-performance framework for building Application Program
 
 FastAPI's growing popularity stems from its asynchronous processing and modular design, making it well applicable to high-traffic applications. The framework's basis in Pydantic ensures data integrity and consistency through type hints and validation. Given its asynchronous capabilities, FastAPI is suitable for applications requiring real-time communication such as messaging, telehealth, and shopping platforms.
 
-## Core Syntax and Features. 
+## Installation and Setup
 
 * For frameworks (including React and Express): setup/installation/configurations, core concepts, key methods or approaches. Include code snippets with explanations.
+1) After creating a [virtual environment](https://docs.python.org/3/library/venv.html), install FastAPI in the terminal.
+
+```py
+pip install "fastapi[standard]"
+```
+
+Ensure `"fastapi[standard]"` is in quotes, so it will work in all terminals.
+
+2) Create a `main.py` file.
+
+```py
+from fastapi import FastAPI
+
+app = FastAPI()
+```
+
+3) Run the server using the terminal.
+
+```py
+fastapi dev main.py
+```
+
+## Core Concepts
+
 
 
 ## Compare and Contrast
