@@ -105,7 +105,6 @@ fastapi dev main.py
 ## Comparison to Express.js
 While Express.js uses the Node.js and JavaScript ecosystem and has access to its libraries and tools, it lacks the type safety of FastAPI and requires external tools such as TypeScript. Although FastAPI is less mature and less flexible, it prioritizes performance and type safety, providing automatic API documentation.
 
-## Conclusion & Tips for learning this language/framework.
 
-* Wrap things up
-* Provide links to resources that you used to help you learn the language.
+## Conclusion
+FastAPI is a high-performance framework enhancing Python development with type-hinting and asynchronous processing. FastAPI provides a high-performing, reliable solution developers seeking concurrency. An additional useful resource is the FastAPI documentation: https://fastapi.tiangolo.com/.
