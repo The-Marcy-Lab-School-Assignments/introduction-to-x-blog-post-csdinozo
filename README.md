@@ -1,4 +1,4 @@
-# FastAPI — Python
+# Python's FastAPI And How It Compares to Express
 
 By [Catalina Dinozo](https://github.com/csdinozo)
 
@@ -6,6 +6,10 @@ By [Catalina Dinozo](https://github.com/csdinozo)
 ## Introduction
 
 FastAPI is a modern, high-performance framework for building Application Program Interfaces with Python based on standard Python type hints. [Sebastián Ramírez](https://github.com/tiangolo) created this framework through combining various alternative frameworks, plug-ins, and tools in adherence to existing standards. Based on tests by the framework's internal development team, FastAPI increases development speed by about 200 to 300% and reduces about 40% of developer errors. With 86.5 thousand stars on GitHub, FastAPI is among the most popular backend frameworks given its lightweight and modular design and ease of use.
+
+
+## Comparison to Express.js
+While Express.js uses the Node.js and JavaScript ecosystem and has access to its libraries and tools, it lacks the type safety of FastAPI and requires external tools such as TypeScript. Type hints document the intended data types of code, improving readability and, in the case of FastAPI, automatically validating incoming data against preset models. This can assist in protecting against errors through ensuring data is of the correct type. TypeScript, a strongly typed version of JavaScript, can be used with Express.js to provide type safety. Although FastAPI is less mature and less flexible, it prioritizes performance and type safety, providing automatic API documentation. Express.js and FastAPI handle modularity differently: the former uses middleware and a Router class to break down complex tasks and logic and the latter uses dependency injection and a built-in routing system. Modularity allows for the reuse of dependencies across endpoints throughout the project.
 
 
 ## Reasons to Use
@@ -100,10 +104,6 @@ fastapi dev main.py
 
     - The `get_posts` function retrieves a list of all posts in the database.
     - Its query parameters `count` and `skip` are defaulted to allow for pagination, such that the URLs 'http://127.0.0.1:8000/posts/?count=20&skip=0' and 'http://127.0.0.1:8000/posts/' will both display 20 posts, bypassing zero initial items.
-
-
-## Comparison to Express.js
-While Express.js uses the Node.js and JavaScript ecosystem and has access to its libraries and tools, it lacks the type safety of FastAPI and requires external tools such as TypeScript. Although FastAPI is less mature and less flexible, it prioritizes performance and type safety, providing automatic API documentation.
 
 
 ## Conclusion
