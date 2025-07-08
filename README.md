@@ -27,6 +27,8 @@ pip install "fastapi[standard]"
 
 Ensure `"fastapi[standard]"` is in quotes, so it will work in all terminals.
 
+Upon running this command, FastAPI and additional dependencies will be installed: Pydantic for data validation and parsing, Uvicorn — an asynchronous server gateway interface (ASGI) server for handling asynchronous Python web applications and frameworkss — and Starlette — a lightweight ASGI framework and toolkit for building asynchronous web services in Python.
+
 2) Create a `main.py` file.
 
 ```py
@@ -35,10 +37,35 @@ from fastapi import FastAPI
 app = FastAPI()
 ```
 
+This initializes a FastAPI application. Every route and configuration hooks to the `app` object.
+
+The server directory now looks as such:
+
+```
+my-fastapi-app/
+├── main.py
+└── (env/)  # virtual environment
+```
+
 3) Run the server using the terminal.
 
 ```py
 fastapi dev main.py
+```
+
+This launches a local development server using the FastAPI command-line interface. Output in the terminal shows the server is running, often at `http://127.0.0.1:8000`. A live-reloading watcher is active to reload the application upon updates to the code.
+
+With expansion to the project, the file structure will eventually look similar to this:
+
+```
+my-fastapi-app/
+├── main.py              # main application entry point
+├── app/
+│   ├── __init__.py
+│   ├── routes.py        # API routes
+│   ├── models.py        # Pydantic models for data validation
+│   └── dependencies.py  # dependency injections
+└── env/                 # virtual environment
 ```
 
 
