@@ -1,4 +1,4 @@
-# Python's FastAPI And How It Compares to Express
+# Python's FastAPI and How It Compares to Express
 
 By [Catalina Dinozo](https://github.com/csdinozo)
 
